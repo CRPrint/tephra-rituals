@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TEPHRA RITUALS | A Volcanic Goods Co.</title>
+  <meta name="description" content="Experience day and night wellness from the Earth's core with Tephra Rituals. Discover our volcanic apothecary and geothermal treatments.">
+  <meta name="ai-context" content="The homepage for Tephra Rituals, offering premium geothermal wellness and volcanic apothecary goods.">
+  
+  <!-- Fonts: Bodoni Moda & Hanken Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  
+  <!-- Tailwind CSS via CDN with Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Bodoni Moda"', 'serif'],
+            headline: ['"Bodoni Moda"', 'serif'],
+            label: ['"Hanken Grotesk"', 'sans-serif'],
+            body: ['"Hanken Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            night: {
+              main: '#0f172a',
+              dark: '#020617',
+            },
+            brand: {
+              primary: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    /* Pre-configured typographic utility classes requested by user */
+    .font-display-lg { font-family: 'Bodoni Moda', serif; font-size: 4rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+    .font-headline-lg { font-family: 'Bodoni Moda', serif; font-size: 2.5rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; }
+    .font-label-lg { font-family: 'Hanken Grotesk', sans-serif; font-size: 0.875rem; letter-spacing: 0.15em; text-transform: uppercase; }
+    .font-body-md { font-family: 'Hanken Grotesk', sans-serif; font-size: 1rem; line-height: 1.7; }
+    .font-body-lg { font-family: 'Hanken Grotesk', sans-serif; font-size: 1.125rem; line-height: 1.8; }
+
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-night-dark text-gray-100 overflow-x-hidden antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full flex justify-between items-center p-6 md:px-12 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
+    <a href="#" class="inline-block transition-transform duration-200 hover:scale-105">
+      <img src="./assets/Tephra-logo_060826-4-png.png" alt="Tephra Rituals" class="h-10 md:h-14 w-auto object-contain brightness-0 invert drop-shadow-lg">
+    </a>
+    <nav class="hidden md:flex gap-8 items-center">
+      <a href="#" class="font-label-lg text-white hover:text-brand-primary transition-colors duration-200 min-h-[48px] min-w-[48px] flex items-center justify-center tracking-wider" data-i18n="nav_home">Home Page</a>
+      <a href="#" class="font-label-lg text-white hover:text-brand-primary transition-colors duration-200 min-h-[48px] min-w-[48px] flex items-center justify-center tracking-wider" id="lang-toggle" data-i18n="btn_toggle_lang">Español</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero Split -->
+    <section class="relative h-screen w-full flex flex-col md:flex-row overflow-hidden">
+      <!-- Day Side -->
+      <div class="flex-1 h-full relative bg-[url('./assets/hero_day_bg.png')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black/10 pointer-events-none"></div>
+      </div>
+      <!-- Night Side -->
+      <div class="flex-1 h-full relative bg-[url('./assets/hero_night_bg_deck.png')] bg-cover bg-center transform -scale-x-100">
+        <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
+      </div>
+      
+      <!-- Bottom Text Block -->
+      <div class="absolute inset-0 flex flex-col items-center justify-end pb-[81px] md:pb-[113px] text-center z-10 pointer-events-none fade-in-up mix-blend-difference">
+        <p class="font-body-lg text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-light tracking-widest uppercase text-xs md:text-sm mb-1" data-i18n="hero_subtitle">Day & Night Wellness from the Earth's Core.</p>
+        <h1 class="font-display-lg text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]" style="font-size: clamp(2rem, 5vw, 3.5rem);" data-i18n="hero_title">THE VOLCANIC RITUAL</h1>
+      </div>
+    </section>
+
+    <!-- Section 5: The Dual System Product Cards -->
+    <section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+      <div class="text-center mb-16 fade-in-up">
+        <h2 class="font-headline-lg text-white mb-4">The Dual System</h2>
+        <p class="font-body-md text-gray-400 max-w-2xl mx-auto mb-6" data-i18n="dual_system_subtitle">Experience the complete cycle of geothermal wellness.</p>
+        <p class="font-body-md text-gray-300 max-w-3xl mx-auto leading-relaxed" data-i18n="dual_system_desc">Born from the earth’s raw elemental power, the Tephra Rituals Dual System is a meticulously calibrated, morning-to-night wellness cycle engineered to optimize your physical rhythm. Grounded in ancestral, full-bodied Koko Samoa, this functional duo transitions you seamlessly through the day’s demands. Volcanic Dawn activates your morning with clean, sustained physical energy and sharp mental focus, while Obsidian Bed grounds your evening, transitioning the body into a state of deep, metabolic recovery and precise neuro-glycogen sleep. Together, they offer a complete, balanced ritual of geothermal vitality from dawn until dark.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
+        
+        <!-- Card 1 (AM Focus) -->
+        <article class="bg-night-main rounded-2xl p-8 lg:p-12 border border-gray-800 shadow-2xl flex flex-col items-center text-center fade-in-up">
+          
+          <!-- Premium Product Packaging Presentation -->
+          <div class="relative w-full max-w-xs mb-8 group perspective-1000 cursor-pointer">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-primary to-[#fcd34d] rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+            <img src="./assets/samoan_roast_bag_mockup.png" alt="Volcanic Dawn Samoan Roast" class="relative w-full h-auto rounded-xl shadow-2xl transition-transform duration-700 ease-out group-hover:scale-105 group-hover:-translate-y-3">
+            <div class="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent rounded-xl pointer-events-none"></div>
+          </div>
+
+          <div class="mb-6">
+            <span class="font-label-lg text-brand-primary tracking-widest inline-block mb-2">PREMIUM COFFEE ALTERNATIVE</span>
+            <h4 class="text-lg md:text-xl font-headline text-gray-400 mb-1">Volcanic Dawn</h4>
+            <h3 class="font-headline-lg text-white">Samoan Roast</h3>
+          </div>
+          
+          <p class="font-body-md text-gray-200 mb-8 max-w-md">Promotes sustained energy, clarity, and focus.</p>
+          
+          <!-- Ingredient Track -->
+          <div class="w-full border-t border-b border-gray-800 py-6 mb-8">
+            <p class="font-label-lg text-gray-400 leading-loose flex flex-wrap justify-center gap-x-3 gap-y-2">
+              <span>KOKO SAMOA</span> <span class="text-gray-600">|</span> 
+              <span>TARO POWDER</span> <span class="text-gray-600">|</span> 
+              <span>CINNAMON</span> <span class="text-gray-600">|</span> 
+              <span>CARDAMOM</span> <span class="text-gray-600">|</span> 
+              <span>BLACK LAVA SALT</span> <span class="text-gray-600">|</span> 
+              <span>GREEN TEA</span>
+            </p>
+          </div>
+          
+          <div class="text-left space-y-4 max-w-md mx-auto mb-10">
+            <h5 class="font-headline text-lg text-white font-semibold text-center" data-i18n="card1_flavor_heading">A Bold, Textured Awakening</h5>
+            <p class="font-body-md text-gray-400 leading-relaxed" data-i18n="card1_flavor_desc_p1">Volcanic Dawn opens with the deep, robust bittersweetness of pure, dark-roasted Samoan Kacao, yielding a complex foundation of woodsmoke and dark molasses. This intense earthiness is immediately brightened by the warm, aromatic snap of Ceylon cinnamon and the sharp, exotic citrus-herbal notes of green cardamom. The blend rounds out with an exceptionally subtle savory finish, where mineral-rich black lava salt cuts through the bitterness, elevating the natural cacao oils and adding a fleeting, pristine oceanic crispness to the palate.</p>
+            <p class="font-body-md text-gray-400 leading-relaxed" data-i18n="card1_flavor_desc_p2">Viscous, substantial, and incredibly smooth. The inclusion of taro root lends a velvety, natural starch thickness that mimics the luxurious body of a heavy cream latte without dairy. It coats the palate evenly, leaving a clean, non-astringent finish that feels grounding and deeply satisfying.</p>
+          </div>
+          
+          <!-- Utility Footer Rail -->
+          <div class="mt-auto pt-6 w-full text-center">
+            <p class="font-label-lg text-gray-500 mb-1">PREMIUM FUNCTIONAL BEVERAGE BLEND</p>
+            <p class="font-label-lg text-gray-500">30 SERVINGS | NET WT. 7.0 OZ</p>
+          </div>
+        </article>
+
+        <!-- Card 2 (PM Grounding) -->
+        <article class="bg-night-main rounded-2xl p-8 lg:p-12 border border-gray-800 shadow-2xl flex flex-col items-center text-center fade-in-up" style="transition-delay: 0.2s;">
+          
+          <!-- Premium Product Packaging Presentation -->
+          <div class="relative w-full max-w-xs mb-8 group perspective-1000 cursor-pointer">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-[#1e293b] rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+            <img src="./assets/midnight_cacao_bag_mockup.png" alt="Obsidian Bed Midnight Cacao" class="relative w-full h-auto rounded-xl shadow-2xl transition-transform duration-700 ease-out group-hover:scale-105 group-hover:-translate-y-3">
+            <div class="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent rounded-xl pointer-events-none"></div>
+          </div>
+
+          <div class="mb-6">
+            <span class="font-label-lg text-brand-primary tracking-widest inline-block mb-2">RESTORATIVE NIGHTTIME BLEND</span>
+            <h4 class="text-lg md:text-xl font-headline text-gray-400 mb-1">Obsidian Bed</h4>
+            <h3 class="font-headline-lg text-white">Midnight Cacao</h3>
+          </div>
+          
+          <p class="font-body-md text-gray-200 mb-8 max-w-md">Formulated for a precise neuro-glycogen sleep.</p>
+          
+          <!-- Ingredient Track -->
+          <div class="w-full border-t border-b border-gray-800 py-6 mb-8">
+            <p class="font-label-lg text-gray-400 leading-loose flex flex-wrap justify-center gap-x-3 gap-y-2">
+              <span>KOKO SAMOA</span> <span class="text-gray-600">|</span> 
+              <span>MACADAMIA NUT</span> <span class="text-gray-600">|</span> 
+              <span>TARO POWDER</span> <span class="text-gray-600">|</span> 
+              <span>LIGHTLY SPICED</span> <span class="text-gray-600">|</span> 
+              <span>COCONUT PALM SUGAR</span> <span class="text-gray-600">|</span> 
+              <span>BEE POLLEN</span>
+            </p>
+          </div>
+          
+          <div class="text-left space-y-4 max-w-md mx-auto mb-10">
+            <h5 class="font-headline text-lg text-white font-semibold text-center" data-i18n="card2_flavor_heading">A Smooth, Velvety Descent</h5>
+            <p class="font-body-md text-gray-400 leading-relaxed" data-i18n="card2_flavor_desc_p1">Obsidian Bed offers a comforting, midnight flavor scape anchored by a plush, mellow cacao core. The dark, bittersweet notes are beautifully softened by a creamy, buttery macadamia nut infusion, creating a profile reminiscent of artisanal dark praline. Gentle sweet accents of caramelized coconut palm sugar thread through the cup, while a delicate dust of floral bee pollen adds an elusive, golden complexity. It is softly rounded off with a mild, comforting whisper of warm baking spice that warms the back of the throat.</p>
+            <p class="font-body-md text-gray-400 leading-relaxed" data-i18n="card2_flavor_desc_p2">Pure silk and liquid luxury. This blend features a deeply soothing, heavily unctuous mouthfeel that maximizes the natural fats of the macadamia and the fine suspension of midnight cacao. It feels dense, warm, and comforting on the tongue—perfectly engineered to signal relaxation and metabolic grounding to the body as you drift toward rest.</p>
+          </div>
+          
+          <!-- Utility Footer Rail -->
+          <div class="mt-auto pt-6 w-full text-center">
+            <p class="font-label-lg text-gray-500 mb-1">PREMIUM FUNCTIONAL BEVERAGE BLEND</p>
+            <p class="font-label-lg text-gray-500">30 SERVINGS | NET WT. 7.0 OZ</p>
+          </div>
+        </article>
+
+      </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-night-main py-12 text-center border-t border-gray-800 mt-20">
+    <p class="font-body-md text-gray-500 mb-4" data-i18n="footer_copyright">© 2026 Tephra Rituals. A Volcanic Goods Co.</p>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-6">
+      <a href="privacy.html" class="font-label-lg text-brand-primary hover:text-white transition-colors" data-i18n="footer_privacy">Privacy Policy</a>
+      <a href="terms.html" class="font-label-lg text-brand-primary hover:text-white transition-colors" data-i18n="footer_terms">Terms of Service</a>
+      <a href="#" class="font-label-lg text-brand-primary hover:text-white transition-colors" id="btn-license" data-i18n="footer_license">License Metadata</a>
+    </div>
+  </footer>
+
+  <!-- Licensing Modal -->
+  <div id="license-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-night-main border border-gray-800 rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300">
+      <div class="flex justify-between items-start mb-6">
+        <h3 class="font-headline-lg text-white text-xl md:text-2xl" data-i18n="modal_license_title">Asset License Metadata</h3>
+        <button id="close-license" class="text-gray-400 hover:text-white min-w-[48px] min-h-[48px] flex items-center justify-center text-3xl font-light focus:outline-none">&times;</button>
+      </div>
+      <div class="space-y-5 font-body-md text-gray-300">
+        <div>
+          <span class="block text-xs font-label-lg text-gray-500 mb-1" data-i18n="modal_asset_id">ASSET UUID</span>
+          <span class="font-mono text-sm break-all text-brand-primary">6bb99240-65ab-4b25-bec7-879a551bdb46</span>
+        </div>
+        <div>
+          <span class="block text-xs font-label-lg text-gray-500 mb-1" data-i18n="modal_owner_id">OWNER ID</span>
+          <span class="font-mono text-sm text-white">TEPHRA-RITUALS-2026</span>
+        </div>
+        <div>
+          <span class="block text-xs font-label-lg text-gray-500 mb-1" data-i18n="modal_signature">VERIFICATION SIGNATURE</span>
+          <span class="font-mono text-xs break-all text-gray-400">0x6bb9924065ab4b25bec7879a551bdb46f8c6b7aa6214f18bb92749e759bdb46</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Logic & Intersection Observer -->
+  <script src="./assets/js/app.js"></script>
+  <script>
+    // IntersectionObserver logic for fade-in animations
+    document.addEventListener("DOMContentLoaded", () => {
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".fade-in-up").forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
