@@ -1,0 +1,127 @@
+/* Navigation */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg) 5%;
+  box-sizing: border-box;
+  z-index: 100;
+  pointer-events: none; /* Let clicks pass through except on links */
+}
+
+.brand-logo {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--text-main);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  pointer-events: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: center;
+  pointer-events: auto;
+}
+
+.nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 1.1rem;
+  min-height: var(--touch-target-min);
+  min-width: var(--touch-target-min);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--transition-speed);
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section - Split Layout */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+}
+
+.hero-half {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Day Side (Left) */
+.hero-day {
+  /* We will use a gradient to simulate the warm mountain until the user adds an image */
+  background: linear-gradient(to bottom, var(--day-bg-light), var(--day-bg-main), var(--day-bg-dark));
+}
+
+.hero-day::after {
+  content: '';
+  position: absolute;
+  top:0; left:0; width:100%; height:100%;
+  background: radial-gradient(circle at top center, rgba(255,255,255,0.2) 0%, transparent 60%);
+}
+
+/* Night Side (Right) */
+.hero-night {
+  /* We will use a gradient to simulate the cool night mountain */
+  background: linear-gradient(to bottom, var(--night-bg-light), var(--night-bg-main), var(--night-bg-dark));
+}
+
+.hero-night::after {
+  content: '';
+  position: absolute;
+  top:0; left:0; width:100%; height:100%;
+  /* Simulating stars/moon glow */
+  background: radial-gradient(circle at top center, rgba(255,255,255,0.1) 0%, transparent 40%);
+}
+
+/* Overlay Text in Center */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  width: 90%;
+  max-width: 800px;
+  pointer-events: none;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-sm);
+  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* In a real app we'd add a hamburger menu */
+  }
+  
+  .hero {
+    flex-direction: column;
+  }
+}

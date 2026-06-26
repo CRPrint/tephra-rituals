@@ -1,0 +1,46 @@
+:root {
+  /* Colors - Day/Warm (Left) */
+  --day-bg-light: #fcd34d;
+  --day-bg-main: #d97706;
+  --day-bg-dark: #78350f;
+
+  /* Colors - Night/Cool (Right) */
+  --night-bg-light: #1e293b;
+  --night-bg-main: #0f172a;
+  --night-bg-dark: #020617;
+
+  /* Brand Colors */
+  --brand-primary: #d97706;
+  --brand-secondary: #0f172a;
+  --text-main: #f8fafc;
+  --text-muted: #cbd5e1;
+  --text-dark: #1e293b;
+
+  /* Typography */
+  --font-heading: 'Cinzel', serif; /* Elegant, serif font matching the image */
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing & Layout */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Interactive Elements */
+  --touch-target-min: 48px;
+  --transition-speed: 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--night-bg-main);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+  font-weight: 400;
+}
