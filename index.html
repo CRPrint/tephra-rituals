@@ -58,6 +58,15 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    .hero-text-container {
+      top: 47%;
+    }
+    @media (min-width: 768px) {
+      .hero-text-container {
+        top: 0;
+      }
+    }
   </style>
 </head>
 <body class="bg-night-dark text-gray-100 overflow-x-hidden antialiased">
@@ -86,7 +95,7 @@
       </div>
       
       <!-- Bottom Text Block -->
-      <div class="absolute top-[50%] left-0 w-full flex flex-col items-center text-center z-10 pointer-events-none fade-in-up mix-blend-difference pt-6 md:inset-0 md:justify-end md:pb-[113px] md:pt-0">
+      <div class="absolute hero-text-container left-0 w-full flex flex-col items-center text-center z-10 pointer-events-none fade-in-up mix-blend-difference md:inset-0 md:justify-end md:pb-[113px]">
         <p class="font-body-lg text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-light tracking-widest uppercase text-xs md:text-sm mb-1" data-i18n="hero_subtitle">Day & Night Wellness from the Earth's Core.</p>
         <h1 class="font-display-lg text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]" style="font-size: clamp(2rem, 5vw, 3.5rem);" data-i18n="hero_title">THE VOLCANIC RITUAL</h1>
       </div>
